@@ -1,0 +1,120 @@
+{
+  "menus": [
+    {
+      "name": "Big mac",
+      "slug": "big-mac",
+      "image": "big-mac.jpg",
+      "id": 1,
+      "price": "8$",
+      "composition": [
+        {
+          "name": "Iguaçu Falls",
+          "slug": "iguacu-falls",
+          "image": "iguacu-falls.jpg"
+        },
+        {
+          "name": "Pão de Açúcar",
+          "slug": "pao-de-acucar",
+          "image": "pao-de-acucar.jpg"
+        },
+        {
+          "name": "Sao Paulo",
+          "slug": "sao-paulo",
+          "image": "sao-paulo.jpg"
+        },
+        {
+          "name": "Salvador",
+          "slug": "salvador",
+          "image": "salvador.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Cheeseburger",
+      "slug": "cheeseburger",
+      "image": "cheeseburger.jpg",
+      "id": 2,
+      "price": "5$",
+      "composition": [
+        {
+          "name": "Panama City",
+          "slug": "panama-city",
+          "image": "panama-city.jpg"
+        },
+        {
+          "name": "Panama Canal",
+          "slug": "panama-canal",
+          "image": "panama-canal.jpg"
+        },
+        {
+          "name": "Bocas del Toro",
+          "slug": "bocas-del-toro",
+          "image": "bocas-del-toro.jpg"
+        },
+        {
+          "name": "Santa Catalina",
+          "slug": "santa-catalina",
+          "image": "santa-catalina.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Double cheese",
+      "slug": "double-cheese",
+      "image": "double-cheese.jpg",
+      "id": 3,
+      "price": "7$",
+      "composition": [
+        {
+          "name": "Na Pali Coast",
+          "slug": "na-pali-coast",
+          "image": "na-pali-coast.jpg"
+        },
+        {
+          "name": "O'Ahu's North Shore",
+          "slug": "ohaus-north-shore",
+          "image": "ohaus-north-shore.jpg"
+        },
+        {
+          "name": "Waikiki Beach",
+          "slug": "waikiki-beach",
+          "image": "waikiki-beach.jpg"
+        },
+        {
+          "name": "Kilauea Volcano",
+          "slug": "kilauea-volcano",
+          "image": "kilauea-volcano.jpg"
+        }
+      ]
+    },
+    {
+      "name": "CBO",
+      "slug": "cbo",
+      "image": "cbo.jpg",
+      "id": 4,
+      "price": "12$",
+      "composition": [
+        {
+          "name": "Tower Isle",
+          "slug": "tower-isle",
+          "image": "tower-isle.jpg"
+        },
+        {
+          "name": "Blue Mountain",
+          "slug": "blue-mountain",
+          "image": "blue-mountain.jpg"
+        },
+        {
+          "name": "Montego Bay",
+          "slug": "montego-bay",
+          "image": "montego-bay.jpg"
+        },
+        {
+          "name": "Port Antonio",
+          "slug": "port-antonio",
+          "image": "port-antonio.jpg"
+        }
+      ]
+    }
+  ]
+}
