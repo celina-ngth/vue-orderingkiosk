@@ -1,6 +1,9 @@
 <script setup>
 import { computed } from 'vue'
+import { useCartStore } from '@/stores/useCartStore'
 import dataSource from '@/data.json'
+
+const cart = useCartStore()
 
 const data = computed(() => dataSource.menus)
 </script>
@@ -20,7 +23,9 @@ const data = computed(() => dataSource.menus)
         {{ item.name }}
       </div>
       {{ item.price }}
-      <button type="button">Add item</button>
+      <button type="button" @click="cart.addToCart()">Add item</button>
     </div>
   </div>
+
+  <div>Item in cart : {{ cart.doubleCount }}</div>
 </template>
