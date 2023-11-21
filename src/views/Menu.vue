@@ -7,9 +7,20 @@ const data = computed(() => dataSource.menus)
 
 <template>
   <h1>Menu</h1>
-  <div v-for="item in data" :key="item.id">
-    <img :src="`/images/${item.image}`" :alt="item.name" style="width: 100px" />
-    <strong>{{ item.name }}</strong>
-    {{ item.price }}
+
+  <!-- Create component ITEM -->
+  <div class="flex justify-between w-full">
+    <div v-for="item in data" :key="item.id" class="flex flex-col">
+      <img
+        :src="`/images/${item.image}`"
+        :alt="item.name"
+        style="width: 150px"
+      />
+      <div class="text-yellow6 text-lg font-bold">
+        {{ item.name }}
+      </div>
+      {{ item.price }}
+      <button type="button">Add item</button>
+    </div>
   </div>
 </template>
