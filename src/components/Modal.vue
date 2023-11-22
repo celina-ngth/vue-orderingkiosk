@@ -19,13 +19,13 @@ function closeModal() {
     class="fixed z-40 w-full h-full flex-col bg-black bg-opacity-50 inset-0"
     @click.self="closeModal"
   >
-    <div class="z-50 w-1/2 h-1/2 bg-white m-a p-4 flex flex-col">
+    <div class="z-50 w-1/2 h-3/4 bg-white m-a p-4 flex flex-col">
       <h3 class="flex justify-between items-center m-0">
         <slot name="header" />
         <button @click="closeModal">x</button>
       </h3>
 
-      <div class="my-4 h-full"><slot /></div>
+      <div class="my-4 h-full overflow-scroll"><slot /></div>
 
       <div><slot name="footer" /></div>
     </div>

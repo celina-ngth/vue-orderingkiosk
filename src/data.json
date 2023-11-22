@@ -9,19 +9,19 @@
       "composition": [
         {
           "name": "Iguaçu Falls",
-          "slug": "iguacu-falls"
+          "image": "big-mac.jpg"
         },
         {
           "name": "Pão de Açúcar",
-          "slug": "pao-de-acucar"
+          "image": "big-mac.jpg"
         },
         {
           "name": "Sao Paulo",
-          "slug": "sao-paulo"
+          "image": "big-mac.jpg"
         },
         {
           "name": "Salvador",
-          "slug": "salvador"
+          "image": "big-mac.jpg"
         }
       ]
     },
@@ -34,19 +34,19 @@
       "composition": [
         {
           "name": "Panama City",
-          "slug": "panama-city"
+          "image": "cheeseburger.jpg"
         },
         {
           "name": "Panama Canal",
-          "slug": "panama-canal"
+          "image": "cheeseburger.jpg"
         },
         {
           "name": "Bocas del Toro",
-          "slug": "bocas-del-toro"
+          "image": "cheeseburger.jpg"
         },
         {
           "name": "Santa Catalina",
-          "slug": "santa-catalina"
+          "image": "cheeseburger.jpg"
         }
       ]
     },
@@ -59,19 +59,19 @@
       "composition": [
         {
           "name": "Na Pali Coast",
-          "slug": "na-pali-coast"
+          "image": "double-cheese.jpg"
         },
         {
           "name": "O'Ahu's North Shore",
-          "slug": "ohaus-north-shore"
+          "image": "double-cheese.jpg"
         },
         {
           "name": "Waikiki Beach",
-          "slug": "waikiki-beach"
+          "image": "double-cheese.jpg"
         },
         {
           "name": "Kilauea Volcano",
-          "slug": "kilauea-volcano"
+          "image": "double-cheese.jpg"
         }
       ]
     },
@@ -84,19 +84,19 @@
       "composition": [
         {
           "name": "Tower Isle",
-          "slug": "tower-isle"
+          "image": "cbo.jpg"
         },
         {
           "name": "Blue Mountain",
-          "slug": "blue-mountain"
+          "image": "cbo.jpg"
         },
         {
           "name": "Montego Bay",
-          "slug": "montego-bay"
+          "image": "cbo.jpg"
         },
         {
           "name": "Port Antonio",
-          "slug": "port-antonio"
+          "image": "cbo.jpg"
         }
       ]
     }

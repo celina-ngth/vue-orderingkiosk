@@ -1,12 +1,12 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { useCartStore } from '@/stores/useCartStore'
 import Quantity from '@/components/Quantity.vue'
 import Modal from '@/components/Modal.vue'
 
 const cart = useCartStore()
 
-defineProps({
+const props = defineProps({
   product: {
     name: String,
     price: Number,
@@ -20,6 +20,8 @@ const quantity = ref(1)
 function changeQuantity(qty) {
   quantity.value = qty
 }
+
+const amount = computed(() => props.product.price * quantity.value)
 </script>
 
 <template>
@@ -42,15 +44,28 @@ function changeQuantity(qty) {
 
       <div class="flex-col">
         {{ product.name }} - ${{ product.price }}
-        <Quantity @update:qty="changeQuantity" />
+
+        <h4>Composition</h4>
+        <div v-for="(ingredient, index) in product.composition" :key="index">
+          <img
+            :src="`/images/${ingredient.image}`"
+            :alt="ingredient.name"
+            class="w-[20px]"
+          />
+          {{ ingredient.name }}
+        </div>
       </div>
+
+      <Quantity @update:qty="changeQuantity" />
 
       <template #footer>
         <button
           type="button"
+          class="flex justify-between w-full"
           @click="cart.addToCart(product, quantity), (openModal = false)"
         >
-          Add product
+          <span>Add to cart</span>
+          ${{ amount }}
         </button>
       </template>
     </Modal>
