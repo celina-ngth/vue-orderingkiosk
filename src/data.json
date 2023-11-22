@@ -5,27 +5,23 @@
       "slug": "big-mac",
       "image": "big-mac.jpg",
       "id": 1,
-      "price": "8$",
+      "price": 8,
       "composition": [
         {
           "name": "Iguaçu Falls",
-          "slug": "iguacu-falls",
-          "image": "iguacu-falls.jpg"
+          "slug": "iguacu-falls"
         },
         {
           "name": "Pão de Açúcar",
-          "slug": "pao-de-acucar",
-          "image": "pao-de-acucar.jpg"
+          "slug": "pao-de-acucar"
         },
         {
           "name": "Sao Paulo",
-          "slug": "sao-paulo",
-          "image": "sao-paulo.jpg"
+          "slug": "sao-paulo"
         },
         {
           "name": "Salvador",
-          "slug": "salvador",
-          "image": "salvador.jpg"
+          "slug": "salvador"
         }
       ]
     },
@@ -34,27 +30,23 @@
       "slug": "cheeseburger",
       "image": "cheeseburger.jpg",
       "id": 2,
-      "price": "5$",
+      "price": 5,
       "composition": [
         {
           "name": "Panama City",
-          "slug": "panama-city",
-          "image": "panama-city.jpg"
+          "slug": "panama-city"
         },
         {
           "name": "Panama Canal",
-          "slug": "panama-canal",
-          "image": "panama-canal.jpg"
+          "slug": "panama-canal"
         },
         {
           "name": "Bocas del Toro",
-          "slug": "bocas-del-toro",
-          "image": "bocas-del-toro.jpg"
+          "slug": "bocas-del-toro"
         },
         {
           "name": "Santa Catalina",
-          "slug": "santa-catalina",
-          "image": "santa-catalina.jpg"
+          "slug": "santa-catalina"
         }
       ]
     },
@@ -63,27 +55,23 @@
       "slug": "double-cheese",
       "image": "double-cheese.jpg",
       "id": 3,
-      "price": "7$",
+      "price": 7,
       "composition": [
         {
           "name": "Na Pali Coast",
-          "slug": "na-pali-coast",
-          "image": "na-pali-coast.jpg"
+          "slug": "na-pali-coast"
         },
         {
           "name": "O'Ahu's North Shore",
-          "slug": "ohaus-north-shore",
-          "image": "ohaus-north-shore.jpg"
+          "slug": "ohaus-north-shore"
         },
         {
           "name": "Waikiki Beach",
-          "slug": "waikiki-beach",
-          "image": "waikiki-beach.jpg"
+          "slug": "waikiki-beach"
         },
         {
           "name": "Kilauea Volcano",
-          "slug": "kilauea-volcano",
-          "image": "kilauea-volcano.jpg"
+          "slug": "kilauea-volcano"
         }
       ]
     },
@@ -92,27 +80,23 @@
       "slug": "cbo",
       "image": "cbo.jpg",
       "id": 4,
-      "price": "12$",
+      "price": 12,
       "composition": [
         {
           "name": "Tower Isle",
-          "slug": "tower-isle",
-          "image": "tower-isle.jpg"
+          "slug": "tower-isle"
         },
         {
           "name": "Blue Mountain",
-          "slug": "blue-mountain",
-          "image": "blue-mountain.jpg"
+          "slug": "blue-mountain"
         },
         {
           "name": "Montego Bay",
-          "slug": "montego-bay",
-          "image": "montego-bay.jpg"
+          "slug": "montego-bay"
         },
         {
           "name": "Port Antonio",
-          "slug": "port-antonio",
-          "image": "port-antonio.jpg"
+          "slug": "port-antonio"
         }
       ]
     }

@@ -1,13 +1,13 @@
 import { defineStore } from 'pinia'
 
 export const useCartStore = defineStore('cart', {
-  state: () => ({ count: 0, name: 'Eduardo' }),
-  getters: {
-    doubleCount: (state) => state.count * 2,
-  },
+  state: () => ({
+    products: [],
+  }),
+  getters: {},
   actions: {
-    addToCart() {
-      this.count++
+    addToCart(product) {
+      this.products.push(product)
     },
   },
 })
