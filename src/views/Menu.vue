@@ -9,7 +9,7 @@ const products = computed(() => dataSource.menus)
 
 <template>
   <h1>Menu</h1>
-  <div class="flex w-full justify-between items-center gap-2">
+  <div class="grid grid-cols-4 gap-4">
     <Product v-for="product in products" :key="product.id" :product="product" />
   </div>
 

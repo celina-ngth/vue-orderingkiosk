@@ -7,9 +7,14 @@ export const useCartStore = defineStore('cart', {
   }),
   getters: {},
   actions: {
-    addToCart(product) {
+    addToCart(product, quantity) {
+      const amount = product.price * quantity
+
+      product.quantity = quantity
+      product.amount = amount
       this.products.push(product)
-      this.total += product.price
+
+      this.total += amount
     },
   },
 })

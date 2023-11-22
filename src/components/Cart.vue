@@ -7,7 +7,7 @@ const cart = useCartStore()
 <template>
   <div>Item in cart :</div>
   <div v-for="product in cart.products" :key="product.id">
-    {{ product.name }} - ${{ product.price }}
+    x{{ product.quantity }} {{ product.name }} - ${{ product.amount }}
   </div>
 
   <div class="my-4">Total : ${{ cart.total }}</div>
