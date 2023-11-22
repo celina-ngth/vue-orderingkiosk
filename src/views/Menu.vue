@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import dataSource from '@/data.json'
 import Product from '@/components/Product.vue'
+import Cart from '@/components/Cart.vue'
 
 const products = computed(() => dataSource.menus)
 </script>
@@ -11,4 +12,7 @@ const products = computed(() => dataSource.menus)
   <div class="flex w-full justify-between items-center gap-2">
     <Product v-for="product in products" :key="product.id" :product="product" />
   </div>
+
+  <h2>My order - Eat in</h2>
+  <Cart />
 </template>
