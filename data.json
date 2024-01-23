@@ -1,5 +1,82 @@
 {
-  "menus": [
+  "comboMeal": [
+    {
+      "name": "Big mac",
+      "slug": "big-mac",
+      "image": "big-mac.jpg",
+      "id": 1,
+      "price": 8,
+      "composition": [
+        {
+          "name": "Iguaçu Falls",
+          "image": "big-mac.jpg"
+        },
+        {
+          "name": "Pão de Açúcar",
+          "image": "big-mac.jpg"
+        },
+        {
+          "name": "Sao Paulo",
+          "image": "big-mac.jpg"
+        },
+        {
+          "name": "Salvador",
+          "image": "big-mac.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Cheeseburger",
+      "slug": "cheeseburger",
+      "image": "cheeseburger.jpg",
+      "id": 2,
+      "price": 5,
+      "composition": [
+        {
+          "name": "Panama City",
+          "image": "cheeseburger.jpg"
+        },
+        {
+          "name": "Panama Canal",
+          "image": "cheeseburger.jpg"
+        },
+        {
+          "name": "Bocas del Toro",
+          "image": "cheeseburger.jpg"
+        },
+        {
+          "name": "Santa Catalina",
+          "image": "cheeseburger.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Double cheese",
+      "slug": "double-cheese",
+      "image": "double-cheese.jpg",
+      "id": 3,
+      "price": 7,
+      "composition": [
+        {
+          "name": "Na Pali Coast",
+          "image": "double-cheese.jpg"
+        },
+        {
+          "name": "O'Ahu's North Shore",
+          "image": "double-cheese.jpg"
+        },
+        {
+          "name": "Waikiki Beach",
+          "image": "double-cheese.jpg"
+        },
+        {
+          "name": "Kilauea Volcano",
+          "image": "double-cheese.jpg"
+        }
+      ]
+    }
+  ],
+  "products": [
     {
       "name": "Big mac",
       "slug": "big-mac",
@@ -76,27 +153,52 @@
       ]
     },
     {
-      "name": "CBO",
-      "slug": "cbo",
-      "image": "cbo.jpg",
+      "name": "McChicken",
+      "slug": "mc-chicken",
+      "image": "mc-chicken.jpg",
       "id": 4,
       "price": 12,
       "composition": [
         {
           "name": "Tower Isle",
-          "image": "cbo.jpg"
+          "image": "mc-chicken.jpg"
         },
         {
           "name": "Blue Mountain",
-          "image": "cbo.jpg"
+          "image": "mc-chicken.jpg"
         },
         {
           "name": "Montego Bay",
-          "image": "cbo.jpg"
+          "image": "mc-chicken.jpg"
         },
         {
           "name": "Port Antonio",
-          "image": "cbo.jpg"
+          "image": "mc-chicken.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Filet-O-Fish",
+      "slug": "filet-o-fish",
+      "image": "filet-o-fish.jpg",
+      "id": 4,
+      "price": 12,
+      "composition": [
+        {
+          "name": "Tower Isle",
+          "image": "filet-o-fish.jpg"
+        },
+        {
+          "name": "Blue Mountain",
+          "image": "filet-o-fish.jpg"
+        },
+        {
+          "name": "Montego Bay",
+          "image": "filet-o-fish.jpg"
+        },
+        {
+          "name": "Port Antonio",
+          "image": "filet-o-fish.jpg"
         }
       ]
     }
