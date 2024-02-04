@@ -1,10 +1,10 @@
 <script setup>
 import { ref, computed } from 'vue'
-import { useCartStore } from '@/stores/useCartStore'
+import { useProductsStore } from '@/stores/useProductsStore'
 import Quantity from '@/components/Quantity.vue'
 import Modal from '@/components/Modal.vue'
 
-const cart = useCartStore()
+const cart = useProductsStore()
 
 const props = defineProps({
   product: {
@@ -12,20 +12,23 @@ const props = defineProps({
     price: Number,
     image: String,
   },
+  noModal: Boolean,
 })
 
 const openModal = ref(false)
 const quantity = ref(1)
 
+const amount = computed(() => props.product.price * quantity.value)
+
 function changeQuantity(qty) {
   quantity.value = qty
 }
-
-const amount = computed(() => props.product.price * quantity.value)
 </script>
 
 <template>
-  <div class="flex flex-col border border-solid border-rounded p-2 my-8">
+  <div
+    class="flex flex-col border border-solid border-coolGray border-rounded p-2 my-2"
+  >
     <img
       :src="`/images/${product.image}`"
       :alt="product.name"
@@ -35,7 +38,11 @@ const amount = computed(() => props.product.price * quantity.value)
     <div class="text-yellow6 text-lg font-bold">{{ product.name }}</div>
     <div>${{ product.price }}</div>
 
-    <button type="button" @click="openModal = true" class="mt-2">
+    <button
+      type="button"
+      @click="noModal ? cart.addToCart(product, 1) : (openModal = true)"
+      class="mt-2"
+    >
       Add to cart
     </button>
 

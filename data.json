@@ -1,9 +1,9 @@
 {
-  "comboMeal": [
+  "menus": [
     {
-      "name": "Big mac",
-      "slug": "big-mac",
-      "image": "big-mac.jpg",
+      "name": "Menu Best of",
+      "slug": "best-of",
+      "image": "combomeal.jpg",
       "id": 1,
       "price": 8,
       "composition": [
@@ -22,56 +22,6 @@
         {
           "name": "Salvador",
           "image": "big-mac.jpg"
-        }
-      ]
-    },
-    {
-      "name": "Cheeseburger",
-      "slug": "cheeseburger",
-      "image": "cheeseburger.jpg",
-      "id": 2,
-      "price": 5,
-      "composition": [
-        {
-          "name": "Panama City",
-          "image": "cheeseburger.jpg"
-        },
-        {
-          "name": "Panama Canal",
-          "image": "cheeseburger.jpg"
-        },
-        {
-          "name": "Bocas del Toro",
-          "image": "cheeseburger.jpg"
-        },
-        {
-          "name": "Santa Catalina",
-          "image": "cheeseburger.jpg"
-        }
-      ]
-    },
-    {
-      "name": "Double cheese",
-      "slug": "double-cheese",
-      "image": "double-cheese.jpg",
-      "id": 3,
-      "price": 7,
-      "composition": [
-        {
-          "name": "Na Pali Coast",
-          "image": "double-cheese.jpg"
-        },
-        {
-          "name": "O'Ahu's North Shore",
-          "image": "double-cheese.jpg"
-        },
-        {
-          "name": "Waikiki Beach",
-          "image": "double-cheese.jpg"
-        },
-        {
-          "name": "Kilauea Volcano",
-          "image": "double-cheese.jpg"
         }
       ]
     }
@@ -181,7 +131,7 @@
       "name": "Filet-O-Fish",
       "slug": "filet-o-fish",
       "image": "filet-o-fish.jpg",
-      "id": 4,
+      "id": 5,
       "price": 12,
       "composition": [
         {
@@ -202,5 +152,6 @@
         }
       ]
     }
-  ]
+  ],
+  "cart": []
 }
