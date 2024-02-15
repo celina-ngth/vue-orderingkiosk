@@ -1,9 +1,9 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useProductsStore } from '../stores/useProductsStore'
-
 import Product from '@/components/Product.vue'
 import Cart from '@/components/Cart.vue'
+
 const productList = useProductsStore()
 
 onMounted(async () => {
@@ -14,14 +14,14 @@ onMounted(async () => {
 <template>
   <h1>Commandez</h1>
   <div>
-    <h2>Menus</h2>
+    <!-- <h2>Menus</h2>
     <div class="grid grid-cols-4 gap-4">
       <Product
         v-for="menu in productList.$state.menus"
         :key="menu.id"
         :product="menu"
       />
-    </div>
+    </div> -->
     <h2>Burgers</h2>
     <div class="grid grid-cols-4 gap-4">
       <Product

@@ -4,8 +4,6 @@ export const useProductsStore = defineStore('product', {
   state: () => ({
     menus: [],
     burgers: [],
-    cart: [],
-    total: 0,
   }),
   getters: {},
   actions: {
@@ -29,25 +27,6 @@ export const useProductsStore = defineStore('product', {
       } catch (error) {
         console.log(error)
       }
-    },
-
-    addToCart(newProduct, quantity) {
-      let amount = newProduct.price * quantity
-
-      const existingProduct = this.burgers.find(
-        (product) => product.id === newProduct.id
-      )
-
-      if (existingProduct) {
-        existingProduct.quantity += quantity
-        existingProduct.amount += amount
-      } else {
-        newProduct.quantity = quantity
-        newProduct.amount = amount
-        this.$state.products.push(newProduct)
-      }
-
-      this.total += amount
     },
   },
 })

@@ -1,10 +1,10 @@
 <script setup>
 import { ref, computed } from 'vue'
-import { useProductsStore } from '@/stores/useProductsStore'
+import { useCartStore } from '@/stores/useCartStore'
 import Quantity from '@/components/Quantity.vue'
 import Modal from '@/components/Modal.vue'
 
-const cart = useProductsStore()
+const cart = useCartStore()
 
 const props = defineProps({
   product: {

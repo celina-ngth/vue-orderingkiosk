@@ -153,5 +153,33 @@
       ]
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "name": "Cheeseburger",
+      "slug": "cheeseburger",
+      "image": "cheeseburger.jpg",
+      "id": 2,
+      "price": 5,
+      "composition": [
+        {
+          "name": "Panama City",
+          "image": "cheeseburger.jpg"
+        },
+        {
+          "name": "Panama Canal",
+          "image": "cheeseburger.jpg"
+        },
+        {
+          "name": "Bocas del Toro",
+          "image": "cheeseburger.jpg"
+        },
+        {
+          "name": "Santa Catalina",
+          "image": "cheeseburger.jpg"
+        }
+      ],
+      "quantity": 1,
+      "amount": 5
+    }
+  ]
 }
