@@ -1,10 +1,12 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useCartStore } from '@/stores/useCartStore'
+import { useCurrency } from '@/composable/useCurrency'
 import Quantity from '@/components/Quantity.vue'
 import Modal from '@/components/Modal.vue'
 
 const cart = useCartStore()
+const { formatPrice } = useCurrency()
 
 const props = defineProps({
   product: {
@@ -12,7 +14,6 @@ const props = defineProps({
     price: Number,
     image: String,
   },
-  noModal: Boolean,
 })
 
 const openModal = ref(false)
@@ -27,7 +28,7 @@ function changeQuantity(qty) {
 
 <template>
   <div
-    class="flex flex-col border border-solid border-coolGray border-rounded p-2 my-2"
+    class="flex flex-col border border-solid border-coolgray border-rounded p-2 my-2 min-w-[200px] items-center"
   >
     <img
       :src="`/images/${product.image}`"
@@ -35,29 +36,29 @@ function changeQuantity(qty) {
       class="w-[150px]"
     />
 
-    <div class="text-yellow6 text-lg font-bold">{{ product.name }}</div>
-    <div>${{ product.price }}</div>
+    <div class="flex justify-between w-full">
+      <div class="text-yellow6 text-lg font-bold">{{ product.name }}</div>
+      <div>
+        {{ formatPrice(product.price) }}
+      </div>
+    </div>
 
-    <button
-      type="button"
-      @click="noModal ? cart.addToCart(product, 1) : (openModal = true)"
-      class="mt-2"
-    >
-      Add to cart
+    <button type="button" @click="openModal = true" class="mt-2 w-full">
+      Ajouter au panier
     </button>
 
     <Modal v-model="openModal">
-      <template #header>Add to cart</template>
+      <template #header>Ajouter au panier</template>
 
       <div class="flex-col">
-        {{ product.name }} - ${{ product.price }}
+        {{ product.name }} - {{ formatPrice(product.price) }}
 
         <h4>Composition</h4>
         <div v-for="(ingredient, index) in product.composition" :key="index">
           <img
             :src="`/images/${ingredient.image}`"
             :alt="ingredient.name"
-            class="w-[20px]"
+            class="w-[30px]"
           />
           {{ ingredient.name }}
         </div>
@@ -71,8 +72,8 @@ function changeQuantity(qty) {
           class="flex justify-between w-full"
           @click="cart.addToCart(product, quantity), (openModal = false)"
         >
-          <span>Add to cart</span>
-          ${{ amount }}
+          <span>Ajouter au panier</span>
+          {{ formatPrice(amount) }}
         </button>
       </template>
     </Modal>

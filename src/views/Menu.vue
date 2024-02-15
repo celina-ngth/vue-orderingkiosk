@@ -12,20 +12,11 @@ onMounted(async () => {
 </script>
 
 <template>
-  <h1>Commandez</h1>
-  <div>
-    <!-- <h2>Menus</h2>
-    <div class="grid grid-cols-4 gap-4">
-      <Product
-        v-for="menu in productList.$state.menus"
-        :key="menu.id"
-        :product="menu"
-      />
-    </div> -->
+  <h1 class="text-white">Commandez</h1>
+  <div class="bg-white p-12 rounded">
     <h2>Burgers</h2>
-    <div class="grid grid-cols-4 gap-4">
+    <div class="flex gap-4 flex-wrap">
       <Product
-        no-modal
         v-for="burger in productList.$state.burgers"
         :key="burger.id"
         :product="burger"
@@ -36,4 +27,3 @@ onMounted(async () => {
   <h2>Ma commande</h2>
   <Cart />
 </template>
-../stores/useProductsStore
