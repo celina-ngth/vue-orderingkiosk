@@ -4,6 +4,7 @@ export const useCartStore = defineStore('cart', {
   state: () => ({
     cart: [],
     total: 0,
+    nbItemsInCart: 0,
   }),
   getters: {
     getTotal: (state) => {
@@ -13,6 +14,13 @@ export const useCartStore = defineStore('cart', {
 
       state.total = calculateTotal
     },
+    getQuantityInCart: (state) => {
+      const nbItemsInCart = state.cart.reduce((nbItemsInCart, item) => {
+        return (nbItemsInCart += item.quantity)
+      }, 0)
+
+      state.nbItemsInCart = nbItemsInCart
+    },
   },
   actions: {
     async getCart() {
@@ -21,6 +29,7 @@ export const useCartStore = defineStore('cart', {
         this.cart = await response.json()
 
         this.getTotal
+        this.getQuantityInCart
       } catch (error) {
         console.error('Error:', error)
       }

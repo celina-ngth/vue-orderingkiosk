@@ -26,7 +26,10 @@ onMounted(async () => {
     </a>
   </div>
 
-  <div class="my-4 bg-primary text-lg font-bold text-white rounded py-1 px-2">
-    Total : {{ formatPrice(cart.total) }}
+  <div
+    class="my-4 bg-primary text-lg font-bold text-white rounded py-1 px-2 flex justify-between"
+  >
+    <div>Total : {{ formatPrice(cart.total) }}</div>
+    <div>Nombre d'articles : {{ cart.nbItemsInCart }} articles</div>
   </div>
 </template>
