@@ -37,7 +37,7 @@ function changeQuantity(qty) {
     />
 
     <div class="flex justify-between w-full">
-      <div class="text-yellow6 text-lg font-bold">{{ product.name }}</div>
+      <div class="text-primary text-lg font-bold">{{ product.name }}</div>
       <div>
         {{ formatPrice(product.price) }}
       </div>

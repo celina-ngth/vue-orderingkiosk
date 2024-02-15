@@ -13,7 +13,7 @@ onMounted(async () => {
 
 <template>
   <h1 class="text-white">Commandez</h1>
-  <div class="bg-white p-12 rounded">
+  <div class="bg-white p-12 rounded mb-12">
     <h2>Burgers</h2>
     <div class="flex gap-4 flex-wrap">
       <Product
@@ -24,6 +24,8 @@ onMounted(async () => {
     </div>
   </div>
 
-  <h2>Ma commande</h2>
-  <Cart />
+  <div class="bg-white p-12 rounded">
+    <h2>Ma commande</h2>
+    <Cart />
+  </div>
 </template>
