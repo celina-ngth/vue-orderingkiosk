@@ -17,7 +17,7 @@ function decrement() {
 </script>
 
 <template>
-  <div text-center>Quantity</div>
+  <div text-center>Quantité</div>
   <div class="flex items-center justify-center gap-2">
     <button type="button" @click="decrement()" class="mt-2">-</button>
     <div>{{ quantity }}</div>

@@ -51,16 +51,17 @@ function changeQuantity(qty) {
       <template #header>Ajouter au panier</template>
 
       <div class="flex-col">
-        {{ product.name }} - {{ formatPrice(product.price) }}
+        <div class="font-bold text-primary mb-12">
+          {{ product.name }} - {{ formatPrice(product.price) }}
+        </div>
 
-        <h4>Composition</h4>
-        <div v-for="(ingredient, index) in product.composition" :key="index">
-          <img
-            :src="`/images/${ingredient.image}`"
-            :alt="ingredient.name"
-            class="w-[30px]"
-          />
-          {{ ingredient.name }}
+        <h3>Composition</h3>
+        <div
+          v-for="(ingredient, index) in product.composition"
+          :key="index"
+          class="flex items-center"
+        >
+          {{ ingredient }}
         </div>
       </div>
 

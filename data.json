@@ -1,31 +1,4 @@
 {
-  "menus": [
-    {
-      "name": "Menu Best of",
-      "slug": "best-of",
-      "image": "combomeal.jpg",
-      "id": 1,
-      "price": 8,
-      "composition": [
-        {
-          "name": "Iguaçu Falls",
-          "image": "big-mac.jpg"
-        },
-        {
-          "name": "Pão de Açúcar",
-          "image": "big-mac.jpg"
-        },
-        {
-          "name": "Sao Paulo",
-          "image": "big-mac.jpg"
-        },
-        {
-          "name": "Salvador",
-          "image": "big-mac.jpg"
-        }
-      ]
-    }
-  ],
   "products": [
     {
       "name": "Big mac",
@@ -34,22 +7,11 @@
       "id": 1,
       "price": 8,
       "composition": [
-        {
-          "name": "Iguaçu Falls",
-          "image": "big-mac.jpg"
-        },
-        {
-          "name": "Pão de Açúcar",
-          "image": "big-mac.jpg"
-        },
-        {
-          "name": "Sao Paulo",
-          "image": "big-mac.jpg"
-        },
-        {
-          "name": "Salvador",
-          "image": "big-mac.jpg"
-        }
+        "Pain",
+        "Steak haché",
+        "Salade",
+        "Sauce",
+        "Fromage"
       ]
     },
     {
@@ -59,22 +21,11 @@
       "id": 2,
       "price": 5,
       "composition": [
-        {
-          "name": "Panama City",
-          "image": "cheeseburger.jpg"
-        },
-        {
-          "name": "Panama Canal",
-          "image": "cheeseburger.jpg"
-        },
-        {
-          "name": "Bocas del Toro",
-          "image": "cheeseburger.jpg"
-        },
-        {
-          "name": "Santa Catalina",
-          "image": "cheeseburger.jpg"
-        }
+        "Pain",
+        "Steak haché",
+        "Salade",
+        "Sauce",
+        "Fromage"
       ]
     },
     {
@@ -84,22 +35,11 @@
       "id": 3,
       "price": 7,
       "composition": [
-        {
-          "name": "Na Pali Coast",
-          "image": "double-cheese.jpg"
-        },
-        {
-          "name": "O'Ahu's North Shore",
-          "image": "double-cheese.jpg"
-        },
-        {
-          "name": "Waikiki Beach",
-          "image": "double-cheese.jpg"
-        },
-        {
-          "name": "Kilauea Volcano",
-          "image": "double-cheese.jpg"
-        }
+        "Pain",
+        "Steak haché",
+        "Salade",
+        "Sauce",
+        "Fromage"
       ]
     },
     {
@@ -109,22 +49,11 @@
       "id": 4,
       "price": 12,
       "composition": [
-        {
-          "name": "Tower Isle",
-          "image": "mc-chicken.jpg"
-        },
-        {
-          "name": "Blue Mountain",
-          "image": "mc-chicken.jpg"
-        },
-        {
-          "name": "Montego Bay",
-          "image": "mc-chicken.jpg"
-        },
-        {
-          "name": "Port Antonio",
-          "image": "mc-chicken.jpg"
-        }
+        "Pain",
+        "Poulet frit",
+        "Salade",
+        "Sauce",
+        "Fromage"
       ]
     },
     {
@@ -134,52 +63,13 @@
       "id": 5,
       "price": 12,
       "composition": [
-        {
-          "name": "Tower Isle",
-          "image": "filet-o-fish.jpg"
-        },
-        {
-          "name": "Blue Mountain",
-          "image": "filet-o-fish.jpg"
-        },
-        {
-          "name": "Montego Bay",
-          "image": "filet-o-fish.jpg"
-        },
-        {
-          "name": "Port Antonio",
-          "image": "filet-o-fish.jpg"
-        }
+        "Pain",
+        "Poisson pané",
+        "Salade",
+        "Sauce",
+        "Fromage"
       ]
     }
   ],
-  "cart": [
-    {
-      "name": "Cheeseburger",
-      "slug": "cheeseburger",
-      "image": "cheeseburger.jpg",
-      "id": 2,
-      "price": 5,
-      "composition": [
-        {
-          "name": "Panama City",
-          "image": "cheeseburger.jpg"
-        },
-        {
-          "name": "Panama Canal",
-          "image": "cheeseburger.jpg"
-        },
-        {
-          "name": "Bocas del Toro",
-          "image": "cheeseburger.jpg"
-        },
-        {
-          "name": "Santa Catalina",
-          "image": "cheeseburger.jpg"
-        }
-      ],
-      "quantity": 1,
-      "amount": 5
-    }
-  ]
+  "cart": []
 }
