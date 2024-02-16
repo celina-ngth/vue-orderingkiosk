@@ -65,6 +65,7 @@ export const useCartStore = defineStore('cart', {
         }
 
         this.getTotal
+        this.getQuantityInCart
       } catch {
         console.error('Error:', error)
       }

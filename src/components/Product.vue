@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { useCartStore } from '@/stores/useCartStore'
 import { useCurrency } from '@/composable/useCurrency'
 import Quantity from '@/components/Quantity.vue'
@@ -19,8 +19,6 @@ const props = defineProps({
 const openModal = ref(false)
 const quantity = ref(1)
 
-const amount = computed(() => props.product.price * quantity.value)
-
 function changeQuantity(qty) {
   quantity.value = qty
 }
@@ -36,47 +34,35 @@ function changeQuantity(qty) {
       class="w-[150px]"
     />
 
-    <div class="flex justify-between w-full">
-      <div class="text-primary text-lg font-bold">{{ product.name }}</div>
-      <div>
-        {{ formatPrice(product.price) }}
-      </div>
+    <div class="text-primary text-lg font-bold">
+      {{ product.name }}
+      <span @click="openModal = true" class="cursor-pointer">ⓘ</span>
     </div>
+    <div>{{ formatPrice(product.price) }}</div>
 
-    <button type="button" @click="openModal = true" class="mt-2 w-full">
+    <Quantity @update:qty="changeQuantity" />
+
+    <button
+      type="button"
+      @click="cart.addToCart(product, quantity)"
+      class="mt-2 w-full"
+    >
       Ajouter au panier
     </button>
 
     <Modal v-model="openModal">
-      <template #header>Ajouter au panier</template>
-
-      <div class="flex-col">
-        <div class="font-bold text-primary mb-12">
-          {{ product.name }} - {{ formatPrice(product.price) }}
-        </div>
-
-        <h3>Composition</h3>
-        <div
-          v-for="(ingredient, index) in product.composition"
-          :key="index"
-          class="flex items-center"
-        >
-          {{ ingredient }}
-        </div>
-      </div>
-
-      <Quantity @update:qty="changeQuantity" />
-
-      <template #footer>
-        <button
-          type="button"
-          class="flex justify-between w-full"
-          @click="cart.addToCart(product, quantity), (openModal = false)"
-        >
-          <span>Ajouter au panier</span>
-          {{ formatPrice(amount) }}
-        </button>
+      <template #header>
+        {{ product.name }}
       </template>
+
+      <h4>Composition</h4>
+      <div
+        v-for="(ingredient, index) in product.composition"
+        :key="index"
+        class="flex items-center"
+      >
+        {{ ingredient }}
+      </div>
     </Modal>
   </div>
 </template>
