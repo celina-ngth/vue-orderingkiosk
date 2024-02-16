@@ -1,8 +1,7 @@
 <script setup>
-import { ref } from 'vue'
+import { defineModel } from 'vue'
 
-const quantity = ref(1)
-
+const quantity = defineModel()
 const emit = defineEmits(['update:qty'])
 
 function increment() {

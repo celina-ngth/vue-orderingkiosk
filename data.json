@@ -71,22 +71,5 @@
       ]
     }
   ],
-  "cart": [
-    {
-      "name": "Filet-O-Fish",
-      "slug": "filet-o-fish",
-      "image": "filet-o-fish.jpg",
-      "id": 5,
-      "price": 12,
-      "composition": [
-        "Pain",
-        "Poisson pané",
-        "Salade",
-        "Sauce",
-        "Fromage"
-      ],
-      "quantity": 17,
-      "amount": 204
-    }
-  ]
+  "cart": []
 }

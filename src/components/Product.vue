@@ -18,10 +18,6 @@ const props = defineProps({
 
 const openModal = ref(false)
 const quantity = ref(1)
-
-function changeQuantity(qty) {
-  quantity.value = qty
-}
 </script>
 
 <template>
@@ -40,11 +36,11 @@ function changeQuantity(qty) {
     </div>
     <div>{{ formatPrice(product.price) }}</div>
 
-    <Quantity @update:qty="changeQuantity" />
+    <Quantity v-model="quantity" />
 
     <button
       type="button"
-      @click="cart.addToCart(product, quantity)"
+      @click="cart.addToCart(product, quantity), (quantity = 1)"
       class="mt-2 w-full"
     >
       Ajouter au panier

@@ -11,11 +11,11 @@
   "dependencies": {
     "json-server": "^0.17.4",
     "pinia": "^2.1.7",
-    "vue": "^3.3.8",
+    "vue": "^3.4.19",
     "vue-router": "4"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.5.0",
+    "@vitejs/plugin-vue": "^5.0.0",
     "unocss": "^0.57.6",
     "vite": "^5.0.0"
   }
